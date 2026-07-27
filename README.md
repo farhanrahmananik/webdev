@@ -16,6 +16,7 @@ A polished, responsive personal portfolio for Md Farhan Rahman Anik. The site pr
 - Static contact form with direct email, GitHub, and LinkedIn access
 - Accessibility basics, including semantic HTML, keyboard support, focus states, and reduced-motion support
 - No frameworks, packages, build tools, or external JavaScript
+- Locally hosted display/body fonts and technology icons with no runtime font or icon CDN dependency
 
 ## Design Direction
 
@@ -32,7 +33,22 @@ The site uses an original warm editorial design with brown-black surfaces, off-w
 ```text
 farhan-portfolio/
 ├── assets/
+│   ├── fonts/
+│   │   ├── archivo-black/
+│   │   │   ├── archivo-black-latin-400-normal.woff2
+│   │   │   ├── archivo-black-latin-ext-400-normal.woff2
+│   │   │   └── OFL.txt
+│   │   └── manrope/
+│   │       ├── manrope-latin-wght-normal.woff2
+│   │       ├── manrope-latin-ext-wght-normal.woff2
+│   │       └── OFL.txt
 │   ├── images/
+│   │   ├── branding/
+│   │   ├── projects/
+│   │   ├── stack/
+│   │   │   ├── 28 local technology and brand SVGs
+│   │   │   └── LICENSE-devicon.txt
+│   │   ├── favicon.svg
 │   │   └── profile.jpg
 │   └── pdf/
 │       └── Md_Farhan_Rahman_Anik_CV.pdf
@@ -67,6 +83,17 @@ Open `index.html` in any modern browser.
 5. Save the settings and wait for GitHub to publish the site.
 
 The site uses relative paths and requires no build step, so it can be hosted directly from the repository root.
+
+## Local Runtime Assets
+
+The site self-hosts the two font families used by the current design:
+
+- **Archivo Black** — normal 400, Latin and Latin Extended WOFF2 subsets
+- **Manrope** — normal variable 400–800, Latin and Latin Extended WOFF2 subsets
+
+Both fonts use `font-display: swap`, and their SIL Open Font License files are stored beside the font files. Technology and brand marks used by the Tools section are sanitized local SVG files in `assets/images/stack/`, with the Devicon license included in that directory. Project previews, profile photography, education/certification branding, the favicon, and the CV are also served from local relative paths.
+
+Ordinary links to GitHub, LinkedIn, Credly, project presentations, and email remain outbound links. They do not load third-party page assets before a visitor activates them.
 
 ## Customization
 
