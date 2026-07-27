@@ -1,0 +1,131 @@
+Full Name: Md Farhan Rahman Anik
+
+Headline: PHP/Laravel Developer | Linux & Cybersecurity Enthusiast | M.Sc. Student in Germany
+
+Location: Cottbus, Germany
+
+GitHub: https://github.com/farhanrahmananik
+LinkedIn: https://www.linkedin.com/in/farhanrahmananik/
+Email: farhan.anik@gmail.com
+
+CV File:
+assets/pdf/Md_Farhan_Rahman_Anik_CV.pdf
+
+Profile Image:
+assets/images/profile.jpg
+
+Short Intro:
+I build practical web applications using PHP, Laravel, MySQL, and modern web technologies. My background combines software development, Linux system administration, and cybersecurity, with growing interest in AI-driven security and scalable systems.
+
+About:
+I am Md Farhan Rahman Anik, a developer and technology enthusiast based in Cottbus, Germany. I have a background in Computer Science and Information Technology and experience in PHP/Laravel development, Linux system administration, cybersecurity, and web application projects. I am also pursuing higher studies in Germany and building my profile around software engineering, cloud, security, and scalable systems.
+
+Skills:
+Backend Development: PHP, Laravel, MySQL, REST API, MVC, Authentication, RBAC
+Frontend Basics: HTML, CSS, JavaScript, Responsive UI
+Linux & System Administration: Ubuntu, RHEL, CentOS, Bash, Ansible, Windows Server basics
+Cybersecurity: Cybersecurity fundamentals, Cryptography, Network & System Security, Incident Management
+Tools: Git, GitHub, Composer, VS Code, MySQL Workbench
+CMS / WordPress: WordPress, WooCommerce, Custom Theme basics
+
+Projects:
+1. HRMS – Laravel
+Description: A Laravel-based HR management system with employee management, attendance, leave, payroll, reports, authentication, and role-based access control.
+Tech: Laravel, PHP, MySQL, Blade, RBAC
+Status: Completed
+
+2. Cyber Security Incident Management – Laravel
+Description: A cybersecurity-focused Laravel application for incident tracking, IOC management, evidence handling, workflow control, reporting, and audit logs.
+Tech: Laravel, PHP, MySQL, Security Workflow, Audit Logs
+Status: Completed
+
+3. Applicant Tracking System – Laravel
+Description: A Laravel-based applicant tracking system for managing job applications, candidates, recruitment workflow, application statuses, and administrative actions.
+Tech: Laravel, PHP, MySQL, Authentication, Admin Panel
+Status: Completed
+
+4. E-Commerce Platform – Laravel React
+Description: A full-stack e-commerce platform with product browsing, cart, checkout, orders, coupons, reviews, reporting, and admin-side management features.
+Tech: Laravel, React, MySQL, API, Cart, Checkout
+Status: Completed
+
+5. Warehouse Management – Laravel
+Description: A Laravel warehouse management system covering catalog, warehouse, stock movements, purchase orders, reporting, and audit logs.
+Tech: Laravel, PHP, MySQL, Stock Management, Reports
+Status: Completed
+
+6. WooCommerce Store – WordPress
+Description: A Germany-focused WooCommerce store project with product setup, coupons, reviews, order flow, HPOS configuration, custom storefront theme, screenshots, and documentation.
+Tech: WordPress, WooCommerce, PHP, Custom Theme, LocalWP
+Status: Completed
+
+Experience:
+
+1. Technology Specialist
+Company: Tech One Global Ltd
+Location: Dhaka, Bangladesh
+Period: March 2022 – December 2022
+
+Description:
+Implemented and maintained enterprise infrastructure services including Active Directory, Exchange Server, DNS, DHCP, file and storage services, and Hyper-V failover clusters. Supported and optimized SQL Server clusters, provided L2/L3 technical support, performed root-cause analysis and incident resolution, prepared proof-of-concept environments and technical demonstrations, and created production IT documentation.
+
+Key responsibilities:
+- Implemented and maintained Active Directory, Exchange Server, DNS, and DHCP services
+- Supported file, storage, and Hyper-V failover-cluster environments
+- Supported and optimized SQL Server clusters
+- Provided L2/L3 troubleshooting and root-cause analysis
+- Resolved enterprise infrastructure incidents
+- Prepared proof-of-concept environments and technical demonstrations
+- Created technical and production-environment documentation
+
+Technologies:
+Windows Server 2016/2019, Active Directory, Exchange Server, DNS, DHCP, Hyper-V, Failover Clustering, SQL Server, PowerShell
+
+2. Technical Support Executive and Instructor
+Company: Linux Pathshala Ltd
+Location: Dhaka, Bangladesh
+Period: August 2019 – August 2021
+
+Description:
+Installed, configured, maintained, and troubleshot Red Hat Enterprise Linux systems, web-hosting environments, networking services, and security controls. Delivered instructor-led RHCSA and RHCE training using practical labs and exam-focused exercises.
+
+Key responsibilities:
+- Installed and maintained Red Hat Enterprise Linux systems
+- Managed users, permissions, storage, services, and networking
+- Performed Linux security hardening
+- Managed web hosting, DNS, domains, FTP, SFTP, Apache, and Nginx
+- Diagnosed Linux, Windows, hardware, software, server, and network issues
+- Delivered instructor-led RHCSA and RHCE training
+- Created practical labs for SELinux, firewalls, web services, file services, SSH, and shell scripting
+
+Technologies:
+Red Hat Enterprise Linux, Bash, Shell Scripting, Apache, Nginx, FTP, SFTP, SSH, SELinux, Firewalld, Web Hosting
+
+3. Web Developer
+Company: CREbsol Ltd
+Location: Dhaka, Bangladesh
+Period: January 2010 – April 2019
+
+Description:
+Developed, maintained, and enhanced PHP and MySQL-based websites and web applications for client and business requirements. Worked across frontend development, WordPress customization, database design, hosting, deployment, debugging, testing, and client collaboration.
+
+Key responsibilities:
+- Developed PHP and MySQL-based websites and web applications
+- Built responsive interfaces using HTML, CSS, JavaScript, and jQuery
+- Developed and customized WordPress websites, themes, plugins, and content structures
+- Designed and maintained MySQL schemas, queries, indexes, backups, and data
+- Managed cPanel, domains, DNS, email accounts, FTP, and SFTP
+- Deployed, tested, debugged, and maintained websites
+- Collaborated with clients, designers, and internal teams
+
+Technologies:
+PHP, MySQL, WordPress, HTML, CSS, JavaScript, jQuery, Responsive Web Design, cPanel, Git
+
+Education:
+- B.Sc. in Computer Science and Information Technology
+- M.Sc. studies in Germany with focus on Cybersecurity / AI / scalable systems / data-driven security
+
+Certifications:
+- Zend Certified PHP Engineer
+- RHCE
+- RHCSA

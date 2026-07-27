@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Code symbol</title>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#F36B2B"/>
+  <path
+    d="M24 20 13 32l11 12m13-27-9 30m12-27 11 12-11 12"
+    fill="none"
+    stroke="#141110"
+    stroke-width="6.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
