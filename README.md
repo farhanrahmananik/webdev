@@ -53,6 +53,8 @@ farhan-portfolio/
 │   └── pdf/
 │       └── Md_Farhan_Rahman_Anik_CV.pdf
 ├── index.html
+├── impressum.html
+├── datenschutz.html
 ├── styles.css
 ├── script.js
 ├── portfolio-content.txt
@@ -110,4 +112,11 @@ Each project card includes two external actions: GitHub opens the source-code re
 
 ## Contact Form Note
 
-The contact form is visual only and does not submit data. It can later be connected to a form service or a custom backend endpoint.
+The contact form is visual only. Submitting it is intercepted in the browser, no field values are transmitted or stored by the portfolio code, and a status message directs visitors to the separate email link. It can later be connected to a form service or a custom backend endpoint, but the privacy notice must be reviewed before that behavior changes.
+
+## Legal Pages
+
+- `impressum.html` — provider and contact information; deployed at `/webdev/impressum.html`
+- `datenschutz.html` — German privacy notice with a short English summary; deployed at `/webdev/datenschutz.html`
+
+Both routes use the same local fonts, favicon, theme, and relative paths as the main portfolio. The legal text is a source-grounded draft based on the supplied private contact details, the current browser-only form behavior, and GitHub’s current Pages and privacy documentation. It should be reviewed by a qualified German legal or privacy professional and updated whenever the hosting setup, contact form, external links, tracking behavior, or private/business status changes.
