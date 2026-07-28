@@ -5775,6 +5775,14 @@ body {
   font-weight: 700;
 }
 
+.academic-note {
+  max-width: 42rem;
+  margin: 0 0 1.35rem;
+  color: var(--muted-light);
+  font-size: clamp(0.95rem, 0.91rem + 0.16vw, 1.05rem);
+  line-height: 1.7;
+}
+
 .credential-actions {
   margin-top: 1.4rem;
   display: flex;
@@ -5841,11 +5849,15 @@ body {
   color: var(--muted-light);
 }
 
-.credential-verification p:last-child {
-  margin: 0;
+.credential-verification p:not(.credential-verification-label) {
+  margin: 0 0 0.85rem;
   color: var(--muted-light);
   font-size: clamp(0.92rem, 0.88rem + 0.16vw, 1.02rem);
   line-height: 1.7;
+}
+
+.credential-verification p:last-child {
+  margin: 0;
 }
 
 .credentials-updated {
