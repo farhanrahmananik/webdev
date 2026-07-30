@@ -1864,7 +1864,8 @@ a {
   gap: 19px;
 }
 
-.footer-links a {
+.footer-links a,
+.footer-links button {
   color: var(--muted);
   font-size: 9px;
   font-weight: 700;
@@ -1873,7 +1874,8 @@ a {
   transition: color 0.2s ease;
 }
 
-.footer-links a:hover {
+.footer-links a:hover,
+.footer-links button:hover {
   color: var(--cyan);
 }
 
@@ -1882,9 +1884,12 @@ a {
   height: 35px;
   display: grid;
   place-items: center;
+  padding: 0;
   border: 1px solid var(--line);
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.025);
+  cursor: pointer;
+  font: inherit;
 }
 
 .reveal {
@@ -3450,7 +3455,8 @@ body {
   background: var(--bg);
 }
 
-.footer-links a:hover {
+.footer-links a:hover,
+.footer-links button:hover {
   color: var(--orange);
 }
 
@@ -4038,7 +4044,8 @@ body {
 }
 
 .footer-content > p,
-.footer-links a {
+.footer-links a,
+.footer-links button {
   font-size: var(--type-footer);
 }
 
