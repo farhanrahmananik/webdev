@@ -10,6 +10,7 @@
   const contactForm = document.querySelector("#contact-form");
   const formStatus = document.querySelector("#form-status");
   const currentYear = document.querySelector("#current-year");
+  const backToTopLinks = [...document.querySelectorAll(".back-to-top")];
   const toolFilterGroup = document.querySelector(".tool-filters");
   const toolFilters = [...document.querySelectorAll(".tool-filter")];
   const toolCards = [...document.querySelectorAll(".tool-card")];
@@ -19,6 +20,7 @@
   const toolGridToggleIcon = toolGridToggle?.querySelector(".tool-grid-toggle-icon");
   const mobileToolsQuery = window.matchMedia("(max-width: 599px)");
   const MOBILE_TOOL_LIMIT = 12;
+  const prefersReducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches || false;
   let activeToolFilter = "all";
   let toolsExpanded = false;
   let toolFilterRun = 0;
@@ -71,6 +73,16 @@
   updateHeader();
   window.addEventListener("scroll", updateHeader, { passive: true });
 
+  backToTopLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: prefersReducedMotion ? "auto" : "smooth",
+      });
+    });
+  });
+
   if ("IntersectionObserver" in window) {
     const revealObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -119,8 +131,6 @@
 
     activeToolFilter = filter;
     const currentRun = ++toolFilterRun;
-    const prefersReducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
-
     toolFilters.forEach((button) => {
       const isActive = button.dataset.filter === filter;
       button.classList.toggle("active", isActive);
@@ -238,8 +248,6 @@
             const filterPanel = toolFilterGroup?.closest(".tool-filter-panel") ?? toolGrid;
             if (!filterPanel || filterPanel.getBoundingClientRect().top >= 0) return;
 
-            const prefersReducedMotion =
-              window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
             const targetTop = Math.max(
               0,
               window.scrollY + filterPanel.getBoundingClientRect().top - 88
