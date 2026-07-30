@@ -852,8 +852,8 @@
             </div>
           </div>
 
-          <!-- This form is static. Connect it to a form service or backend endpoint when ready. -->
-          <form class="contact-form" id="contact-form">
+          <!-- Static-site friendly contact form: JavaScript opens a prefilled email draft. -->
+          <form class="contact-form" id="contact-form" action="mailto:farhan.anik@gmail.com" method="post" enctype="text/plain">
             <div class="form-row">
               <label>
                 <span>Your name</span>
@@ -876,7 +876,7 @@
               <span>Send Message</span>
               <span class="button-arrow" aria-hidden="true">↗</span>
             </button>
-            <p class="form-note">Preview only — this form does not send messages yet.</p>
+            <p class="form-note">Opens your email app with a prepared message to farhan.anik@gmail.com.</p>
             <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>

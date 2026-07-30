@@ -274,9 +274,25 @@
 
   contactForm?.addEventListener("submit", (event) => {
     event.preventDefault();
+    const formData = new FormData(contactForm);
+    const name = String(formData.get("name") || "").trim();
+    const email = String(formData.get("email") || "").trim();
+    const subject = String(formData.get("subject") || "Portfolio contact").trim();
+    const message = String(formData.get("message") || "").trim();
+    const emailBody = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      "",
+      message,
+    ].join("\n");
+    const mailtoUrl = new URL("mailto:farhan.anik@gmail.com");
+    mailtoUrl.searchParams.set("subject", subject || "Portfolio contact");
+    mailtoUrl.searchParams.set("body", emailBody);
+
     if (formStatus) {
-      formStatus.textContent = "This form is a preview. Please email me directly at farhan.anik@gmail.com.";
+      formStatus.textContent = "Opening your email app with a prepared message.";
     }
+    window.location.href = mailtoUrl.toString();
   });
 
   if (currentYear) {
