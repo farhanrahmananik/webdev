@@ -1,6 +1,20 @@
 (() => {
   "use strict";
 
+  // GitHub Pages also serves this page as /index.html. Keep the public URL
+  // canonical while preserving any section fragment such as #projects.
+  if (
+    window.location.protocol !== "file:" &&
+    window.location.pathname.endsWith("/index.html")
+  ) {
+    const cleanPath = window.location.pathname.slice(0, -"index.html".length);
+    window.history.replaceState(
+      null,
+      "",
+      `${cleanPath}${window.location.search}${window.location.hash}`
+    );
+  }
+
   const header = document.querySelector(".site-header");
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector(".nav-menu");
@@ -114,7 +128,7 @@
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
           navLinks.forEach((link) => {
-            const isActive = link.getAttribute("href") === `#${entry.target.id}`;
+            const isActive = new URL(link.href).hash === `#${entry.target.id}`;
             link.classList.toggle("active", isActive);
             if (isActive) {
               link.setAttribute("aria-current", "page");
