@@ -14,15 +14,17 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png?v=2">
   <link rel="shortcut icon" href="assets/images/favicon.ico?v=2">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png?v=2">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="preload" href="assets/fonts/archivo-black/archivo-black-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.min.css">
+  <script src="script.min.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header" id="top">
     <nav class="navbar container" aria-label="Primary navigation">
-      <a class="brand" href="#home" aria-label="Md Farhan Rahman Anik, home">
+      <a class="brand" href="#home">
         <span class="brand-mark">FA</span>
         <span class="brand-copy">
           <strong>Farhan</strong>
@@ -79,7 +81,19 @@
           <div class="hero-card-stage">
             <article class="identity-card" aria-label="Profile of Md Farhan Rahman Anik">
               <div class="identity-photo">
-                <img src="assets/images/profile.jpg" alt="Md Farhan Rahman Anik" width="1602" height="2048">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="assets/images/profile-560.webp 560w, assets/images/profile-600.webp 600w, assets/images/profile-960.webp 960w"
+                    sizes="(max-width: 600px) 80vw, 321px">
+                  <img
+                    src="assets/images/profile.jpg"
+                    alt="Md Farhan Rahman Anik"
+                    width="1602"
+                    height="2048"
+                    fetchpriority="high"
+                    decoding="async">
+                </picture>
                 <span>Portfolio / 2026</span>
               </div>
               <div class="identity-copy">
@@ -835,7 +849,7 @@
             <p>Interested in software development, Linux, cybersecurity, cloud, or scalable systems? Let’s start a thoughtful professional conversation.</p>
 
             <div class="contact-details">
-              <a href="mailto:farhan.anik@gmail.com">
+              <a href="#contact-form" data-email-link data-email="farhan.anik@gmail.com">
                 <span class="contact-icon" aria-hidden="true">@</span>
                 <span><small>Email</small><strong>farhan.anik@gmail.com</strong></span>
                 <span aria-hidden="true">↗</span>
@@ -853,7 +867,7 @@
           </div>
 
           <!-- Static-site friendly contact form: JavaScript opens a prefilled email draft. -->
-          <form class="contact-form" id="contact-form" action="mailto:farhan.anik@gmail.com" method="post" enctype="text/plain">
+          <form class="contact-form" id="contact-form" action="#contact" method="post">
             <div class="form-row">
               <label>
                 <span>Your name</span>
@@ -886,7 +900,7 @@
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <a class="brand footer-brand" href="#home" aria-label="Back to top">
+      <a class="brand footer-brand" href="#home">
         <span class="brand-mark">FA</span>
         <span class="brand-copy"><strong>Md Farhan Rahman Anik</strong><small>Developer · Systems · Security</small></span>
       </a>

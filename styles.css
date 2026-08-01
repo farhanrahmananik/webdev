@@ -1854,7 +1854,7 @@ a {
 }
 
 .footer-content > p {
-  color: #68758b;
+  color: #78859a;
   font-size: 9px;
 }
 
@@ -2361,7 +2361,7 @@ a {
   --line: rgba(255, 255, 255, 0.08);
   --line-bright: rgba(255, 99, 51, 0.55);
   --text: #f7f4ef;
-  --muted-heading: #383434;
+  --muted-heading: #6d6762;
   --muted: #817a74;
   --muted-light: #a8a19b;
   --orange: #ff6333;
@@ -2553,6 +2553,12 @@ body {
   filter: saturate(0.72) contrast(1.03);
 }
 
+.identity-photo picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .identity-photo::after {
   content: "";
   position: absolute;
@@ -2581,7 +2587,7 @@ body {
 
 .identity-label {
   margin: 0 0 9px;
-  color: #726963;
+  color: #685f59;
   font-size: 8px;
   font-weight: 800;
   letter-spacing: 0.13em;

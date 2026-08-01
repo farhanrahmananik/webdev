@@ -9,6 +9,7 @@
   const revealElements = document.querySelectorAll(".reveal");
   const contactForm = document.querySelector("#contact-form");
   const formStatus = document.querySelector("#form-status");
+  const contactEmailLink = document.querySelector("[data-email-link]");
   const currentYear = document.querySelector("#current-year");
   const backToTopLinks = [...document.querySelectorAll(".back-to-top")];
   const toolFilterGroup = document.querySelector(".tool-filters");
@@ -66,8 +67,18 @@
     if (window.innerWidth > 1140) closeMenu();
   });
 
+  let headerFrameRequested = false;
   const updateHeader = () => {
-    header?.classList.toggle("scrolled", window.scrollY > 16);
+    if (headerFrameRequested) return;
+    headerFrameRequested = true;
+
+    window.requestAnimationFrame(() => {
+      const shouldBeScrolled = window.scrollY > 16;
+      if (header?.classList.contains("scrolled") !== shouldBeScrolled) {
+        header?.classList.toggle("scrolled", shouldBeScrolled);
+      }
+      headerFrameRequested = false;
+    });
   };
 
   updateHeader();
@@ -293,6 +304,15 @@
       formStatus.textContent = "Opening your email app with a prepared message.";
     }
     window.location.href = mailtoUrl.toString();
+  });
+
+  contactEmailLink?.addEventListener("click", (event) => {
+    event.preventDefault();
+    const email = contactEmailLink.dataset.email;
+
+    if (email) {
+      window.location.href = `mailto:${email}`;
+    }
   });
 
   if (currentYear) {

@@ -49,14 +49,17 @@ farhan-portfolio/
 │   │   │   ├── 28 local technology and brand SVGs
 │   │   │   └── LICENSE-devicon.txt
 │   │   ├── favicon.svg
-│   │   └── profile.jpg
+│   │   ├── profile.jpg
+│   │   └── responsive profile WebP variants
 │   └── pdf/
 │       └── Md_Farhan_Rahman_Anik_CV.pdf
 ├── index.html
 ├── impressum.html
 ├── datenschutz.html
 ├── styles.css
+├── styles.min.css
 ├── script.js
+├── script.min.js
 ├── portfolio-content.txt
 └── README.md
 ```
@@ -104,6 +107,7 @@ Ordinary links to GitHub, LinkedIn, Credly, project presentations, and email rem
 - Main page structure and content are in `index.html`.
 - Colors, spacing, responsive behavior, and visual effects are in `styles.css`.
 - Navigation, scroll reveal, active links, and static form messaging are in `script.js`.
+- `index.html` loads the pre-minified `styles.min.css` and `script.min.js` production copies for faster delivery; regenerate them after changing the source files.
 - Replace the portrait or CV while preserving the current file paths, or update the references in `index.html`.
 
 ## Project Links
