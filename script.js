@@ -94,7 +94,7 @@
     });
   });
 
-  if ("IntersectionObserver" in window) {
+  if (!mobileToolsQuery.matches && "IntersectionObserver" in window) {
     const revealObserver = new IntersectionObserver(
       (entries, observer) => {
         entries.forEach((entry) => {
@@ -128,7 +128,7 @@
     );
 
     sections.forEach((section) => sectionObserver.observe(section));
-  } else {
+  } else if (!mobileToolsQuery.matches) {
     revealElements.forEach((element) => element.classList.add("is-visible"));
   }
 
@@ -228,6 +228,7 @@
   toolFilterGroup?.addEventListener("click", (event) => {
     const button = event.target.closest(".tool-filter");
     if (!button) return;
+    toolGrid?.classList.add("is-initialized");
     applyToolFilter(button.dataset.filter);
   });
 
@@ -249,6 +250,7 @@
   });
 
   toolGridToggle?.addEventListener("click", () => {
+    toolGrid?.classList.add("is-initialized");
     const isCollapsing = toolsExpanded;
     toolsExpanded = !toolsExpanded;
 
@@ -281,7 +283,10 @@
   };
 
   mobileToolsQuery.addEventListener?.("change", handleToolsViewportChange);
-  applyToolFilter(activeToolFilter, { animate: false });
+  if (mobileToolsQuery.matches && toolCards.length > MOBILE_TOOL_LIMIT && toolGridToggle) {
+    toolGridToggle.hidden = false;
+    toolGridToggle.setAttribute("aria-expanded", "false");
+  }
 
   contactForm?.addEventListener("submit", (event) => {
     event.preventDefault();

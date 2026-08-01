@@ -96,7 +96,7 @@ The site self-hosts the two font families used by the current design:
 - **Archivo Black** — normal 400, Latin and Latin Extended WOFF2 subsets
 - **Manrope** — normal variable 400–800, Latin and Latin Extended WOFF2 subsets
 
-Both fonts use `font-display: swap`, and their SIL Open Font License files are stored beside the font files. Technology and brand marks used by the Tools section are sanitized local SVG files in `assets/images/stack/`, with the Devicon license included in that directory. Project previews, profile photography, education/certification branding, the favicon, and the CV are also served from local relative paths.
+Archivo Black uses `font-display: swap`, while Manrope uses `font-display: optional` to avoid a late mobile text repaint. Their SIL Open Font License files are stored beside the font files. Technology and brand marks used by the Tools section are sanitized local SVG files in `assets/images/stack/`, with the Devicon license included in that directory. Project previews, profile photography, education/certification branding, the favicon, and the CV are also served from local relative paths.
 
 Ordinary links to GitHub, LinkedIn, Credly, project presentations, and email remain outbound links. They do not load third-party page assets before a visitor activates them.
 
