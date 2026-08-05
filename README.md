@@ -1,6 +1,6 @@
 # Md Farhan Rahman Anik — Portfolio
 
-A polished, responsive personal portfolio for Md Farhan Rahman Anik. The site presents a professional profile, technical skills, six selected projects, verified professional experience, education, certifications, and contact details in a modern dark interface.
+A polished, responsive web-development portfolio for Md Farhan Rahman Anik. The site presents a professional profile, technical skills, six selected projects, verified professional experience, education, certifications, and contact details in a modern dark interface.
 
 ## Features
 
@@ -24,8 +24,8 @@ The site uses an original warm editorial design with brown-black surfaces, off-w
 
 ## Tech Stack
 
-- HTML5
-- CSS3
+- Semantic HTML5
+- Vanilla CSS
 - Vanilla JavaScript
 
 ## Folder Structure

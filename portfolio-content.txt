@@ -1,6 +1,6 @@
 Full Name: Md Farhan Rahman Anik
 
-Headline: PHP/Laravel Developer | Linux & Cybersecurity Enthusiast | M.Sc. Student in Germany
+Headline: PHP/Laravel Web Developer | Backend & Full-Stack Development | M.Sc. Student in Germany
 
 Location: Cottbus, Germany
 
@@ -15,10 +15,10 @@ Profile Image:
 assets/images/profile.jpg
 
 Short Intro:
-I build practical web applications using PHP, Laravel, MySQL, and modern web technologies. My background combines software development, Linux system administration, and cybersecurity, with growing interest in AI-driven security and scalable systems.
+I build practical, maintainable web applications with PHP, Laravel, MySQL, WordPress, and modern frontend technologies—from backend architecture and APIs to responsive user experiences.
 
 About:
-I am Md Farhan Rahman Anik, a developer and technology enthusiast based in Cottbus, Germany. I have a background in Computer Science and Information Technology and experience in PHP/Laravel development, Linux system administration, cybersecurity, and web application projects. I am also pursuing higher studies in Germany and building my profile around software engineering, cloud, security, and scalable systems.
+I am Md Farhan Rahman Anik, a web developer based in Cottbus, Germany. I have a background in Computer Science and Information Technology with experience in PHP/Laravel, WordPress, MySQL, responsive interfaces, and web application projects. My systems and cybersecurity background strengthens how I approach secure, reliable, and scalable web software.
 
 Skills:
 Backend Development: PHP, Laravel, MySQL, REST API, MVC, Authentication, RBAC
